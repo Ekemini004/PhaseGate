@@ -32,32 +32,51 @@ public class LagbajaStudentGrade{
   
        
     //show that you have created Xnumber of array lists in the class
-        System.out.println(classOne);
-
-    //ask teacher for Student Score per subject
-    System.out.println("Entering score for student 1 ");
+        //System.out.println(classOne);
 
     //ask teacher for Student Score per subject
     
-    
+
+    //ask teacher for Student Score per subject
     for(int count = 0; count < classOne.size(); count++){
 
-        for(int index = 0; index < classOne.size(); index++){
+         System.out.printf("Entering score for Student %d%n %n%n", count+1);   
 
-                if(count == 0){
+        for(int index = 0; index <= NumberOfSubjects-1; index++){
 
-                    System.out.printf("Enter score for subject %d: ",count+1);
-                    classOne.get(count).add(input.nextInt());
+              System.out.printf("Enter score for subject %d: %n", index+1);
+              
+              System.out.println(); 
 
-                }
+              classOne.get(count).add(input.nextInt());
+              
+              System.out.println("Saving >>>>>>>>>>>>>>>>>");
 
+              System.out.println();  
+    
+              System.out.println("Saved successfully!");
+
+            
 
            }
 
-    }
+
+ }
     
 
         System.out.println(classOne);
+
+        printTableOfStudentScoresAndSubjects(classOne);
+        
+        
+
+    
+
+
+
+
+
+
 
 
 
@@ -80,6 +99,51 @@ public class LagbajaStudentGrade{
     }
 
 
+
+    public static void printTableOfStudentScoresAndSubjects(ArrayList <ArrayList <Integer>> userArrayList){
+
+        System.out.println("==========================================================================");
+
+        System.out.println("STUDENT\t\tSUB1\tSUB2\tSUB3\tTOT\tAVG\t\tPOS");
+
+        System.out.println("==========================================================================");
+
+        //System.out.println();
+
+        for(int count = 0; count < userArrayList.size(); count++){
+
+            for(int index = 0; index < userArrayList.get(count).size(); index++){
+
+                System.out.printf("Student %d\t%d%n",count+1,userArrayList.get(count).get(index));
+                
+                
+
+
+            }
+    
+        
+
+
+        }
+
+
+
+        System.out.println("==========================================================================");
+        
+
+
+
+
+
+
+
+
+
+        System.out.println("==========================================================================");
+
+
+
+    }
 
 
 
