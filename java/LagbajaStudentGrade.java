@@ -20,32 +20,30 @@ public class LagbajaStudentGrade{
     
     System.out.println("Saved successfully!");
 
-    //create an array list for each student, where each score for them will enter.
-    // if teacher entered thet they have 5 srudents, create 5 array lists. each score will enter there.
+    //create an array list for this teachers class
+    ArrayList <ArrayList <Integer>> classOne = new ArrayList <> ();
+
+
+    // if teacher entered thet they have 5 srudents, add new array list 5 times into the array.
+
+        for(int index = 1; index <= NumberOfStudents; index++){
+
+            classOne.add(new ArrayList<>());
+
+        }
+
     
-    for(int index = 1; index <= NumberOfStudents; index++ ){
-
-      
-
-        ArrayList <Integer> values = new ArrayList <Integer>();
-         values.add(6);
-
-
-    }
-
+    
     //i dont really know how to work with mutli / nested arralists if not theyd have been in one
     //show that you have created Xnumber of array lists
      
     
+        
+        System.out.println(classOne);
 
-    ArrayList <Integer> values = new ArrayList <Integer>();
 
-    
-    values.add(5);
-    
-    System.out.println(values);
-    
-    
+
+
 
  }
 
