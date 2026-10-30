@@ -40,18 +40,19 @@ public class LagbajaStudentGrade{
     //ask teacher for Student Score per subject
     
     
-    for(int count = 0; count < classOne.size; count++){
+    for(int count = 0; count < classOne.size(); count++){
 
-        for(int index = 0; index < classOne.size; index++){
+        for(int index = 0; index < classOne.size(); index++){
 
                 if(count == 0){
 
-                    System.out.printf("Enter score for student %d: ",count+1);
-                    classOne.get.add(input.nextInt());
+                    System.out.printf("Enter score for subject %d: ",count+1);
+                    classOne.get(count).add(input.nextInt());
 
                 }
 
-            }
+
+           }
 
     }
     
