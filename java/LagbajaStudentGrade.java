@@ -112,17 +112,20 @@ public class LagbajaStudentGrade{
 
         for(int count = 0; count < userArrayList.size(); count++){
 
+            System.out.printf("Student %d",count+1);
+
             for(int index = 0; index < userArrayList.get(count).size(); index++){
 
-                System.out.printf("Student %d\t%d%n",count+1,userArrayList.get(count).get(index));
-                
+      
+                System.out.printf("\t%d",userArrayList.get(count).get(index));
+
+                //;
                 
 
 
             }
     
-        
-
+                System.out.println();
 
         }
 
@@ -130,14 +133,6 @@ public class LagbajaStudentGrade{
 
         System.out.println("==========================================================================");
         
-
-
-
-
-
-
-
-
 
         System.out.println("==========================================================================");
 
