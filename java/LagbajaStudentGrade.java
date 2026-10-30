@@ -5,6 +5,8 @@ public class LagbajaStudentGrade{
 
 
     public static void main(String [] args){
+    
+    int StudentScore = 0;
 
     Scanner input = new Scanner(System.in);
 
@@ -26,20 +28,38 @@ public class LagbajaStudentGrade{
 
     // if teacher entered thet they have 5 srudents, add new array list 5 times into the array.
 
-        for(int index = 1; index <= NumberOfStudents; index++){
-
-            classOne.add(new ArrayList<>());
-
-        }
-
-    
-    
-    //i dont really know how to work with mutli / nested arralists if not theyd have been in one
-    //show that you have created Xnumber of array lists
-     
-    
-        
+       createXNumberofArrayLists(NumberOfStudents, classOne); 
+  
+       
+    //show that you have created Xnumber of array lists in the class
         System.out.println(classOne);
+
+    //ask teacher for Student Score per subject
+    System.out.println("Entering score for student 1 ");
+
+    //ask teacher for Student Score per subject
+    
+    
+    for(int count = 0; count < classOne.size; count++){
+
+        for(int index = 0; index < classOne.size; index++){
+
+                if(count == 0){
+
+                    System.out.printf("Enter score for student %d: ",count+1);
+                    classOne.get.add(input.nextInt());
+
+                }
+
+            }
+
+    }
+    
+
+        System.out.println(classOne);
+
+
+
 
 
 
@@ -48,14 +68,16 @@ public class LagbajaStudentGrade{
  }
 
 
-   /*public static ArrayList createXNumberofArrayLists(int numberOfArrayLists){
+   public static void createXNumberofArrayLists(int numberOfArrayLists, ArrayList <ArrayList <Integer>> userArrayList){
      
-       ArrayList <Integer> Student = new ArrayList <Integer> ();
+        for(int index = 1; index <= numberOfArrayLists; index++){
 
-        return Student;
+            userArrayList.add(new ArrayList<>());
+
+        }
 
     }
-*/
+
 
 
 
